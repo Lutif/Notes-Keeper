@@ -2,25 +2,25 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import Note from "./component/Note";
+
+import Timer from './component/Timer';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Note />
+      <Note />
+      <Note />
+      <Timer/>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+
