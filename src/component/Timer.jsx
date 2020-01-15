@@ -1,44 +1,40 @@
 import React from "react";
-import ReactDOM from "react-dom";
-
+import '../CSS/styles.css';
 
 class Timer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       startTime: "",
-      duration: "duration",
-      time: new Date().toLocaleTimeString()
+      duration: "00:00:00",
+    timed:true
     };
     this.intervalID = "";
     this.start = this.start.bind(this);
     this.tick = this.tick.bind(this);
-    this.stop = this.stop.bind(this);
+      this.stop = this.stop.bind(this);
+      this.toggle = this.toggle.bind(this);
   }
 
+
+    
   start() {
-    console.log("in start");
-    console.log(this.state.duration);
-    this.setState({ startTime: new Date() });
+      this.setState({ startTime: new Date() });
+      clearInterval(this.intervalID);//clearing previous intervalID incase already running clock
     this.intervalID = setInterval(this.tick, 1000);
   }
   stop() {
-    console.log("stop called");
     clearInterval(this.intervalID);
   }
 
   tick() {
-    console.log("in tick");
     let diff = this.findDuration(this.state.startTime);
-    console.log(diff);
     this.setState({ duration: diff });
   }
 
   findDuration(start) {
-    console.log("in differece");
     let miliSeconds = new Date() - start;
     let hms = this.msToTime(miliSeconds);
-    console.log(miliSeconds);
     return hms;
   }
   msToTime(ms) {
@@ -51,17 +47,20 @@ class Timer extends React.Component {
     h = h < 10 ? "0" + h : h;
     return h + ":" + m + ":" + s;
   }
-
-  render() {
+    toggle() {
+        this.setState({ timed: !this.state.timed });
+  }
+    render() {
+        console.log('render timer :', this.state.timed);
     return (
-      <div className="App">
-        <h1>CLOCK</h1>
-        <h2>{this.state.duration}</h2>
-        <h3>{}</h3>
-        <button onClick={this.start}> Start</button>
-        <button onClick={this.stop}> stop</button>
-      </div>
-    );
+        <div className="clockContainer">
+        <input className="btnClock" type='checkbox' onChange={this.toggle}  />
+            {this.state.timed && <div className='subContainer'>
+                <p>{this.state.duration}</p>
+                <button className="btnClock" onClick={this.start}> +</button>
+                <button className="btnClock" onClick={this.stop}> x</button>
+            </div>}
+      </div>);
   }
 }
 

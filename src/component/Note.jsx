@@ -1,10 +1,17 @@
 import React from "react";
-
+import Timer from './Timer';
 function Note() {
+
+
   return (
+    
     <div className="note">
-      <h1>Call Sam</h1>
-      <p>Call same for inovice</p>
+      <div>
+
+        <h1 contentEditable='true'>Call Sam</h1>
+      <Timer/>  
+      </div>
+      <p contentEditable = 'true' >Call same for inovice</p>
     </div>
   );
 }
