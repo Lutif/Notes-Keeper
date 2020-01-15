@@ -2,7 +2,7 @@
   "name": "keeper",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://lutif.github.io/Notes-Keeper/",
+  "homepage":"https://lutif.github.io/Notes-Keeper",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.3",
