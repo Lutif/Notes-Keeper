@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Notes-Keeper/static/css/main.120d59ec.chunk.css",
-    "main.js": "/Notes-Keeper/static/js/main.c4ce0dd0.chunk.js",
-    "main.js.map": "/Notes-Keeper/static/js/main.c4ce0dd0.chunk.js.map",
+    "main.js": "/Notes-Keeper/static/js/main.047871b0.chunk.js",
+    "main.js.map": "/Notes-Keeper/static/js/main.047871b0.chunk.js.map",
     "runtime-main.js": "/Notes-Keeper/static/js/runtime-main.4bc88774.js",
     "runtime-main.js.map": "/Notes-Keeper/static/js/runtime-main.4bc88774.js.map",
     "static/js/2.849bb619.chunk.js": "/Notes-Keeper/static/js/2.849bb619.chunk.js",
     "static/js/2.849bb619.chunk.js.map": "/Notes-Keeper/static/js/2.849bb619.chunk.js.map",
     "index.html": "/Notes-Keeper/index.html",
-    "precache-manifest.3ee8cd143a11a0c07d104d5b1c07079a.js": "/Notes-Keeper/precache-manifest.3ee8cd143a11a0c07d104d5b1c07079a.js",
+    "precache-manifest.9a103713069fb1a623d4adf378078642.js": "/Notes-Keeper/precache-manifest.9a103713069fb1a623d4adf378078642.js",
     "service-worker.js": "/Notes-Keeper/service-worker.js",
     "static/css/main.120d59ec.chunk.css.map": "/Notes-Keeper/static/css/main.120d59ec.chunk.css.map",
     "static/js/2.849bb619.chunk.js.LICENSE": "/Notes-Keeper/static/js/2.849bb619.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4bc88774.js",
     "static/js/2.849bb619.chunk.js",
     "static/css/main.120d59ec.chunk.css",
-    "static/js/main.c4ce0dd0.chunk.js"
+    "static/js/main.047871b0.chunk.js"
   ]
 }
