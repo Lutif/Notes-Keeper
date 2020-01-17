@@ -1,17 +1,18 @@
 import React from "react";
+import DeleteIcon from "@material-ui/icons/Delete";
 import Timer from './Timer';
-function Note() {
-
+function Note(props) {
+  function handleClick() {
+    props.onDelete(props.id);
+  }
 
   return (
-    
     <div className="note">
-      <div>
-
-        <h1 contentEditable='true'>Call Sam</h1>
-      <Timer/>  
-      </div>
-      <p contentEditable = 'true' >Call same for inovice</p>
+      <h1>{props.title+'   '} <Timer/> </h1>
+      <p>{props.content}</p>
+      <button onClick={handleClick}>
+        <DeleteIcon />
+      </button>
     </div>
   );
 }
